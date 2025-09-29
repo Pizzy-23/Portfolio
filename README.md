@@ -1,32 +1,24 @@
 # Portfólio — Luiz Gustavo Cavina
 
-Site estático simples (HTML/CSS/JS) com tema roxo/preto. Lista projetos a partir dos perfis do GitHub `Pizzy-23` e `Pizzy23` e possui seção de destaques configurável em `script.js`.
+> **🌐 [Acesse o site em tempo real](https://pizzy-23.github.io/Portfolio/)**
 
-## Como rodar local
+Desenvolvedor Back-end & Full-stack especializado em NestJS, Go, .NET e Python. Focado em criar infraestrutura digital que move negócios através de APIs performáticas e arquitetura limpa.
 
-- Abra o arquivo `index.html` no navegador.
-- Para evitar limites de CORS da API do GitHub em contextos locais, prefira usar uma extensão de servidor local (ex.: Live Server do VSCode) ou:
+## 🚀 Acesso Rápido
 
-```bash
-python -m http.server 5500
-```
+- **Site Online**: [pizzy-23.github.io/Portfolio](https://pizzy-23.github.io/Portfolio/)
+- **LinkedIn**: [luiz-gustavo-cavina-faria](https://linkedin.com/in/luiz-gustavo-cavina-faria/)
+- **GitHub**: [@Pizzy-23](https://github.com/Pizzy-23) | [@Pizzy23](https://github.com/Pizzy23)
 
-Depois acesse `http://localhost:5500/Portfolio/`.
+## 🛠️ Tecnologias
 
-## Deploy no GitHub Pages
+**Back-end**: Node.js, NestJS, Go, C#, .NET, Java, Spring Boot, Python  
+**Front-end**: TypeScript, JavaScript, Next.js, React  
+**Arquitetura**: DDD, Hexagonal, Docker, Microservices  
+**Especialidades**: Open Finance, Blockchain, HealthTech, FinTech
 
-1. Crie um repositório público, por exemplo `portfolio`.
-2. Suba os arquivos da pasta `Portfolio/` na raiz do repositório.
-3. Em Settings → Pages: selecione `Deploy from a branch` e aponte para `main` (root).
-4. A URL será algo como `https://USERNAME.github.io/portfolio/`.
+## 📧 Contato
 
-## Personalização rápida
-
-- Cores: edite variáveis CSS em `styles.css` (`--brand`, `--brand-2`, etc.).
-- Destaques: ajuste o array `featured` em `script.js` (formato `owner/repo`).
-- Texto do topo: título/subtítulo no `index.html`.
-
-## Observações
-
-- A API pública do GitHub tem rate limit sem token. Em uso pesado, considere adicionar um `GITHUB_TOKEN` e fazer proxy.
-- Para destacar projetos privados, inclua-os manualmente na seção "Destaques" com links externos.
+- **Email**: luiz.gustavo.cavina@gmail.com
+- **LinkedIn**: [luiz-gustavo-cavina-faria](https://linkedin.com/in/luiz-gustavo-cavina-faria/)
+- **GitHub**: [@Pizzy-23](https://github.com/Pizzy-23)
