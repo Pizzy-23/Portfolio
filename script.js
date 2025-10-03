@@ -11,8 +11,7 @@ const translations = {
             saved: "Horas Economizadas/Semana"
         },
         contact: {
-            email: "📧 luizcavina@gmail.com",
-            phone: "📞 +55 11 98196-7825"
+            email: "📧 luizcavina@gmail.com"
         },
         highlights: {
             title: "Por que Trabalhar Comigo?",
@@ -178,8 +177,7 @@ const translations = {
             saved: "Hours Saved/Week"
         },
         contact: {
-            email: "📧 luizcavina@gmail.com",
-            phone: "📞 +55 11 98196-7825"
+            email: "📧 luizcavina@gmail.com"
         },
         highlights: {
             title: "Why Work With Me?",
@@ -382,12 +380,11 @@ function renderContent() {
                         </div>
                     </div>
 
-                    <div class="contact-links">
-                        <a href="mailto:luizcavina@gmail.com" class="btn btn-primary">${t.contact.email}</a>
-                        <a href="tel:+5511981967825" class="btn btn-outline">${t.contact.phone}</a>
-                        <a href="https://linkedin.com/in/luiz-gustavo-cavina-faria" target="_blank" class="btn btn-outline">LinkedIn</a>
-                        <a href="https://github.com/Pizzy-23" target="_blank" class="btn btn-outline">GitHub</a>
-                    </div>
+                            <div class="contact-links">
+                                <a href="mailto:luizcavina@gmail.com" class="btn btn-primary">${t.contact.email}</a>
+                                <a href="https://linkedin.com/in/luiz-gustavo-cavina-faria" target="_blank" class="btn btn-outline">LinkedIn</a>
+                                <a href="https://github.com/Pizzy-23" target="_blank" class="btn btn-outline">GitHub</a>
+                            </div>
                 </div>
             </div>
         </section>
@@ -711,12 +708,11 @@ function renderContent() {
                     <p>${t.footer.subtitle}</p>
                     <p>${t.footer.availability}</p>
                     
-                    <div class="footer-links">
-                        <a href="mailto:luizcavina@gmail.com" class="btn btn-primary">${t.footer.email}</a>
-                        <a href="tel:+5511981967825" class="btn btn-outline">${t.footer.call}</a>
-                        <a href="https://linkedin.com/in/luiz-gustavo-cavina-faria" target="_blank" class="btn btn-outline">LinkedIn</a>
-                        <a href="https://github.com/Pizzy-23" target="_blank" class="btn btn-outline">GitHub</a>
-                    </div>
+                            <div class="footer-links">
+                                <a href="mailto:luizcavina@gmail.com" class="btn btn-primary">${t.footer.email}</a>
+                                <a href="https://linkedin.com/in/luiz-gustavo-cavina-faria" target="_blank" class="btn btn-outline">LinkedIn</a>
+                                <a href="https://github.com/Pizzy-23" target="_blank" class="btn btn-outline">GitHub</a>
+                            </div>
                 </div>
 
                 <div class="footer-bottom">
