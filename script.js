@@ -336,14 +336,16 @@ const translations = {
     }
 };
 
-let currentLang = localStorage.getItem('portfolioLang') || 'en';
+let currentLang = (typeof localStorage !== 'undefined' && localStorage.getItem('portfolioLang')) || 'en';
 
 function changeLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('portfolioLang', lang);
+    try { localStorage.setItem('portfolioLang', lang); } catch (_) {}
     
-    document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    const btnPt = document.getElementById('btn-pt');
+    const btnEn = document.getElementById('btn-en');
+    if (btnPt) btnPt.classList.toggle('active', lang === 'pt');
+    if (btnEn) btnEn.classList.toggle('active', lang === 'en');
     document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
     
     renderContent();
@@ -724,8 +726,15 @@ function renderContent() {
         </footer>
     `;
     
-    document.getElementById('content').innerHTML = html;
+    const container = document.getElementById('content');
+    if (container) {
+        container.innerHTML = html;
+    }
 }
 
-// Initialize on page load
-changeLanguage(currentLang);
+// Initialize on DOM ready to ensure elements exist
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => changeLanguage(currentLang));
+} else {
+    changeLanguage(currentLang);
+}
